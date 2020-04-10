@@ -1,0 +1,75 @@
+body {
+
+    background: white;
+    color: white;
+    font-family: 'Courier New', Courier, monospace Neue, Arial;
+    margin: 0%;
+    padding: 0%;
+
+}
+h1{
+    background: rgb(80, 106, 255);
+    padding: 1% 4% 1%;
+    height: 20;
+    margin-top: 0%;
+    display: flex;
+    border-style: none;
+}
+section{
+    background: rgb(50, 205, 71);
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    margin: 0 15% 0 0;
+    align-content: center;
+}
+button:hover{
+    border-color: crimson;
+    border-style: dotted;
+
+}
+#buttons{
+    text-align: center;
+}
+ul{
+    background: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    text-align: center;
+}
+li{
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 15%;
+
+
+}
+footer{
+    background: rgb(80, 106, 255);
+    color:  white;
+    padding: 10px 40px;
+    margin-bottom: 0;
+}
+img{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+
+}
+section.description div {
+    background: red;
+    width: 100px;
+    margin: 1px;
+}
+footer{
+    text-align: center;
+}
