@@ -1,57 +1,51 @@
 body {
             
-    background: white;
-    color: white;
+    background: whitesmoke;
+    color: black;
     font-family: 'Courier New', Courier, monospace Neue, Arial;
     margin: 0%;
     padding: 0%;
-
 }
 h1{
+    color: silver;
     background: rgb(80, 106, 255);
     padding: 1% 4% 1%;
-    height: 20;
-    margin-top: 0%;
-    display: flex;
-    border-style: none;
+    margin: 0% 0% 0% 0%;
 }
-section{
-    background: rgb(50, 205, 71);
-    color: black;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-button{
-    margin: 0 15% 0 0;
-    align-content: center;
-}
-button:hover{
-    border-color: crimson;
-    border-style: dotted;
-
-}
-#buttons{
-    text-align: center;
+a{
+    text-decoration: none;
+    padding: 0px 100px 0px 100px;
+    text-align-last: auto;
 }
 ul{
     background: white;
     text-align: center;
-    margin: 0;
-    padding: 0;
-
-}
-nav{
-    text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
 li{
     text-align: center;
     display: inline-block;
-    margin: 0 0 0 15%;
-    
-
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: silver;
+    text-decoration: none;
+}
+section{
+    background: white;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    font-family: monospace;
+    padding: 0px 0px 0px 0px;
+    text-decoration: ;
 }
 footer{
     background: rgb(80, 106, 255);
@@ -63,12 +57,7 @@ img{
     height: 100%;
     width: 100%;
     margin: 0px;
-
-}
-section.description div {
-    background: red;
-    width: 100px;
-    margin: 1px;
+    padding: 0px;
 }
 footer{
     text-align: center;
