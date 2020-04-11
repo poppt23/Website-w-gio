@@ -1,20 +1,35 @@
+
+/* Global CSS */
+
 body {
-    background: whitesmoke;
     color: black;
+    background: white;
     font-family: 'Courier New', Courier, monospace Neue, Arial;
     margin: 0%;
     padding: 0%;
+    display: flex;
+    flex-direction: column;
 }
-h1{
+
+h1 {
     color: silver;
     background: rgb(80, 106, 255);
     padding: 0;
     margin: 0 23px;
 }
-img{
-    height: 200px;
+
+h2 {
+   color: black;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 80px;
 }
-a{
+
+img {
+   height: 200px;
+}
+
+a {
     text-decoration: none;
     text-align-last: auto;
     margin: 0 23px;
@@ -22,11 +37,29 @@ a{
     color: black;
 }
 
+.container {
+   margin: 0 100px;
+}
 
 
+
+
+/* NAVIGATION BAR AND SHOWCASE IMAGE */
+
+header {
+   background-image: url('../images/car.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 1000px;
+   margin-bottom: 100px;
+   opacity: 0.9;
+}
+
+
+
+/* NAVIGATION BAR */
 
 .nav-bar {
-   border-radius: 3px solid black;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -34,22 +67,27 @@ a{
    background: white;
    height: 100px;
    padding: 10px 50px;
-
+   opacity: 0.93;
+   box-shadow: 0 50px 100px black;
 }
+
 .nav-bar .logo {
    display: flex;
    align-items: center;
    width: 15%;
    height: 100px;
 }
+
 .nav-bar img {
    height: 90%;
 }
+
 .nav-bar ul {
    justify-content: flex-end;
    margin-left: 40%;
 }
-.nav-bar li{
+
+.nav-bar li {
     color: black;
     text-align: center;
     display: inline-block;
@@ -57,47 +95,72 @@ a{
     font-size: 30px;
     text-decoration: none;
 }
-a:visited{
+
+a:visited {
     color: black;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: silver;
     text-decoration: none;
 }
 
-section.image{
-    background-image: url('../images/car.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: black;
-    padding-bottom: 50%;
+
+
+/* SHOWCASE IMAGE AND TEXT*/
+
+section.image {
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 34px;
     margin: 0;
+    opacity: 0.93;
 }
-#about{
-    color: white;
-    position: absolute;
-    bottom: 0px;
+
+#about {
+    color: black;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    opacity: 1;
+    align-self: center;
+    justify-content: center;
+    padding: 10px 30px;
+    margin: 230px 60% 0 8%;
+    border-radius: 6px;
+    box-shadow: 10px 10px 60px rgb(35, 35, 35);
 }
-section.description{
+
+#about h2 {
+   font-size: 50px;
+   margin: 15px 0 0 0;
+}
+
+#about p {
+   margin: 15px 0 10px 0;
+}
+
+
+
+
+
+
+/* SECTION BELOW */
+
+section.description {
     color: black;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
     text-align: center;
     margin: 10% 10% 0% 10%;
 }
-section.team{
+
+section.team {
     padding: 0px 10px 10px 10px;
 }
-h2{
-    text-align: center;
-    font-family: monospace;
-    font-size: 100px;
-}
-#bio{
+
+#bio {
     display: inline-block;
     box-sizing: border-box;
     border-style: dotted;
@@ -106,10 +169,12 @@ h2{
     margin: auto;
     padding: 0px 0px 0px 0px;
 }
-section.sponsor{
+
+section.sponsor {
     padding: 0px 10px 10px 10px;
 }
-#sponsor{
+
+#sponsor {
     display: inline-block;
     box-sizing: border-box;
     border-style: dotted;
@@ -118,18 +183,24 @@ section.sponsor{
     margin: auto;
     padding: 0px 0px 0px 0px;
 }
-section.contact{
+
+section.contact {
     padding: 0px 10px 10px 10px;
+    align-self: center;
+    width: 53%
 }
-footer{
+
+footer {
     background: rgb(80, 106, 255);
     color:  white;
     padding: 10px 40px;
     margin-bottom: 0;
 }
-footer{
+
+footer {
     text-align: center;
 }
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
