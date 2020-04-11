@@ -1,5 +1,4 @@
 body {
-            
     background: whitesmoke;
     color: black;
     font-family: 'Courier New', Courier, monospace Neue, Arial;
@@ -10,7 +9,7 @@ h1{
     color: silver;
     background: rgb(80, 106, 255);
     padding: 0;
-    margin: -4% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
 }
 img{
     height: 200px;
@@ -20,18 +19,46 @@ a{
     padding: 0px 100px 0px 100px;
     text-align-last: auto;
 }
-ul{
-    background: white;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
+
+
+
+
+.nav-bar {
+   border-radius: 3px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   background: white;
+   height: 100px;
+   padding: 10px 50px;
+
 }
-li{
+.nav-bar .logo {
+   display: flex;
+   align-items: center;
+   width: 15%;
+   height: 100px;
+}
+.nav-bar img {
+   height: 90%;
+}
+.nav-bar ul {
+   justify-content: flex-end;
+   margin-left: 40%;
+}
+.nav-bar li{
+    color: black;
     text-align: center;
     display: inline-block;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     text-decoration: none;
+}
+a {
+   color:black;
+   margin: 0px 23px;
+   padding: 0px 0px;
 }
 a:visited{
     color: black;
@@ -41,15 +68,17 @@ a:hover{
     color: silver;
     text-decoration: none;
 }
+
 section.image{
     background-image: url('../images/car.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0 0 50% 0;
+    background-color: black;
+    padding-bottom: 50%;
     text-align: center;
     color: white;
     font-size: 40px;
-    position: relative;
+    margin: 0;
 }
 #about{
     color: white;
@@ -107,7 +136,7 @@ footer{
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
+    padding: 12px; /* Some padding */
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -115,7 +144,7 @@ input[type=text], select, textarea {
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
-  
+
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
     background-color: rgb(80, 106, 255;
@@ -125,12 +154,12 @@ input[type=text], select, textarea {
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
     background-color: rgb(43, 67, 201);
   }
-  
+
   /* Add a background color and some padding around the form */
   .container {
     border-radius: 5px;

@@ -3,13 +3,18 @@
     <head>
         <title>ALP Racing</title>
         <link rel="stylesheet" href="styles/newstyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     </head>
     <body>
       <header>
-        <h1 class="logo">
+        <!-- <h1 class="logo">
             <img src="../images/ALP Logo.png" alt="Logo">
-        </h1>
-        <nav>
+        </h1> -->
+        <nav class="nav-bar">
+           <div class="logo">
+              <img src="images/ALP logo2.png" alt="">
+           </div>
+
             <ul>
                 <li><a href="#team">Team</a></li>
                 <li> <a href="#sponsor">Sponsor</a></li>
@@ -19,16 +24,23 @@
         </nav>
       </header>
 
+      <section>
+         <div class="showcase">
+            <img src="" alt="">
+
+         </div>
+      </section>
 
       <section class="image">
         <div id="about">
           ALP Racing is Quick Response Advanced Footwork and Good Driving! Pursuing Sports and Sporty
         </div>
       </section>
+      
       <section class="description">
-        ALP Racing is a cross-media creative agency with a forward-looking approach to content creation 
-        and an eye to the changing tide of social media. We are housed in a creative garage space which 
-        acts as a hub - connecting artists, innovators, industry insiders, and brands around a shared 
+        ALP Racing is a cross-media creative agency with a forward-looking approach to content creation
+        and an eye to the changing tide of social media. We are housed in a creative garage space which
+        acts as a hub - connecting artists, innovators, industry insiders, and brands around a shared
         passion for contemporary car culture.
       </section>
 
@@ -76,7 +88,7 @@
             </article>
           </div>
           <div id="sponsor">
-            <img src="../images/you.jpeg" alt="We want you">  
+            <img src="../images/you.jpeg" alt="We want you">
             <article>
               Be the next one!
             </article>
@@ -93,22 +105,22 @@
 
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            
+
                 <label for="lname">Last Name</label>
                 <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            
+
                 <label for="country">Country</label>
                 <select id="country" name="country">
                   <option value="australia">Australia</option>
                   <option value="canada">Canada</option>
                   <option value="usa">USA</option>
                 </select>
-            
+
                 <label for="subject">Subject</label>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            
+
                 <input type="submit" value="Submit">
-            
+
               </form>
             </div>
           </section>
