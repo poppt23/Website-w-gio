@@ -5,8 +5,8 @@ body {
     color: black;
     background: white;
     font-family: 'Courier New', Courier, monospace Neue, Arial;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
 }
@@ -19,16 +19,15 @@ h2 {
 }
 
 img {
-   height: 400px;
+   height: 200px;
    display: block;
-   margin-left: auto;
-   margin-right: auto;
-   
-
+   margin: 150px auto 0 auto;
 }
+
 ul{
     text-align: center;
 }
+
 a {
     text-decoration: none;
     margin: 0 23px;
@@ -38,14 +37,19 @@ a {
 
 /* NAVIGATION BAR AND SHOWCASE IMAGE */
 
+header {
+   display: flex;
+   flex-direction: column;
+}
 
 .nav-bar {
+   background: white;
    display: block;
    margin: 0;
-   background: white;
    width: 100%;
    height: 55px;
-   padding: 10px 50px;
+   padding: 10px 0 20px 0;
+   10px 0;
    box-shadow: 0 5px 100px black;
    position: fixed;
 }
@@ -76,6 +80,7 @@ a:hover {
    font-size: 50px;
    margin: 15px 0 0 0;
 }
+
 section.image{
     background: url('../images/car.jpg')
     repeat fixed 100%;
@@ -95,8 +100,8 @@ section.description {
 }
 
 section.team {
-    background-color: silver;
-    background-size: cover;
+    background-color: rgb(37, 94, 213);
+    color: white;
 }
 
 #bio {
