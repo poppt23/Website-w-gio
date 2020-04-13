@@ -189,7 +189,6 @@ h2.contact{
 }
 
 #contact {
-    display: inline-block;
     box-sizing: border-box;
     text-align: center;
     width: 41%;
@@ -198,6 +197,12 @@ h2.contact{
     background-color: turquoise;
     border-style: dashed;
 
+}
+
+#inner-contact {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
 }
 
 ul.contact{
