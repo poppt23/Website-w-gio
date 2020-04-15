@@ -94,7 +94,7 @@ a:hover {
 }
 
 section.image{
-    background: url('../images/car.jpg')
+    background: url('../images/kart2.jpg')
     repeat fixed 100%;
     background-size: cover;
     height: 900px;
@@ -155,7 +155,7 @@ ul.bio{
 
 
 section.image2{
-    background: url('../images/car5.jpg')
+    background: url('../images/kart3.jpg')
     repeat fixed 100%;
     background-size: cover;
     height: 700px;
@@ -168,16 +168,23 @@ section.image2{
 section.sponsor {
     padding: 0px 10px 10px 10px;
 }
-
-#sponsor {
-    display: inline-block;
-    box-sizing: border-box;
-    text-align: center;
-    width: 33%;
-    margin-top:1px;
-    padding: 0px 0px 50px 0px;
+img{
+    width: 30%;
+    height: 30%;
 }
 
+section.container.sponsor{
+
+    background-color: white;
+    padding: 0 0 0px 0;
+}
+#inner-sponsor {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   background-color: white;
+   margin-bottom: 0px;
+}
 /* CONTACT SECTION */
 
 
