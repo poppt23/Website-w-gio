@@ -16,6 +16,17 @@ h2 {
    text-align: center;
    font-family: 'Montserrat', sans-serif;
    font-size: 80px;
+   padding: 0;
+   margin: 0;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    padding: 0;
+    margin: 0; 
 }
 
 img {
@@ -35,6 +46,10 @@ a {
     padding: 0;
     color: black;
 }
+
+
+
+
 
 /* NAVIGATION BAR AND SHOWCASE IMAGE */
 
@@ -86,11 +101,11 @@ a:hover {
 
 
 
+
 /* SHOWCASE IMAGE AND TEXT*/
 
 #about h2 {
    font-size: 50px;
-   margin: 15px 0 0 0;
 }
 
 section.image{
@@ -98,7 +113,7 @@ section.image{
     repeat fixed 100%;
     background-size: cover;
     height: 900px;
-    margin-bottom: 100px;
+    margin-bottom: 0;
 }
 
 div.logo{
@@ -111,6 +126,11 @@ div.logo img{
    opacity: 1.0;
 }
 
+
+
+
+
+
 /* TEAM SECTION */
 
 section.description {
@@ -118,18 +138,24 @@ section.description {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
     text-align: center;
-    margin: 0% 10% 10% 10%;
-}
-
-h2.team{
-    color: white;
-    margin: 0;
-    padding: 0;
+    padding: 115px 7%;
 }
 
 section.team {
     background-color: rgb(37, 94, 213);
     color: white;
+    color: white;
+    padding: 80px 7%;
+}
+
+section.team h2 {
+    color: white;
+    margin-bottom: 45px;
+}
+
+#list-of-bios {
+    display: flex;
+    justify-content: center;
 }
 
 #bio {
@@ -137,14 +163,20 @@ section.team {
     box-sizing: border-box;
     text-align: center;
     width: 33%;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0 50px 0;
+    margin: 0 2%;
 }
+
+#bio img {
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
 article{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
+
 ul.bio{
     text-align: left;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -165,19 +197,15 @@ section.image2{
 /* SPONSOR SECTION */
 
 
-section.sponsor {
-    padding: 0px 10px 10px 10px;
-}
-img{
-    width: 30%;
-    height: 30%;
-}
-
-section.container.sponsor{
-
+section.container.sponsor {
     background-color: white;
-    padding: 0 0 0px 0;
+    margin: 90px 7% 115px 7%; 
 }
+
+section.container.sponsor h2 {
+    margin-bottom: 125px;
+}
+
 #inner-sponsor {
    display: flex;
    flex-direction: row;
@@ -185,6 +213,36 @@ section.container.sponsor{
    background-color: white;
    margin-bottom: 0px;
 }
+
+#sponsor {
+  width: 37%;
+  margin: 0 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#sponsor p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+#carellos {
+    width: 80%;
+    height: 120px;
+    margin: 0 0 35px 4%;
+    padding: 0;
+}
+
+#sabelt {
+    height: 120px;
+    width: 50%;
+    margin: 0 0 35px 0;
+    padding: 0;
+}
+
+
 /* CONTACT SECTION */
 
 
@@ -199,14 +257,10 @@ h2.contact{
     margin-left: 50px;
     margin-right: 50px;
     background-color: silver;
-
-
 }
 
 section.container.contact{
-
     background-color: rgb(37, 94, 213);
-    padding: 0 0 50px 0;
 }
 
 #inner-contact {
@@ -214,8 +268,8 @@ section.container.contact{
    flex-direction: row;
    justify-content: center;
    background-color: rgb(37, 94, 213);
-   margin-bottom: 50px;
 }
+
 
 ul.contact{
     list-style: none;
@@ -227,6 +281,7 @@ ul.contact{
 form{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px 50px 0px 50px;
+    padding: 20px;
     color: white;
 }
 
@@ -260,7 +315,6 @@ button:hover {
   /* Add a background color and some padding around the form */
   .container {
     background-color: #f2f2f2;
-    padding: 20px;
   }
 
 /* FOOTER */

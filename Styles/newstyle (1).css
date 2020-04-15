@@ -1,0 +1,268 @@
+
+/* Global CSS */
+
+body {
+    color: black;
+    background: white;
+    font-family: 'Courier New', Courier, monospace Neue, Arial;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+   color: black;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 80px;
+}
+
+img {
+   height: 200px;
+   display: block;
+   margin: auto;
+   opacity: 1;
+}
+
+ul{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 23px;
+    padding: 0;
+    color: black;
+}
+
+/* NAVIGATION BAR AND SHOWCASE IMAGE */
+
+header {
+   display: flex;
+   flex-direction: column;
+}
+
+.nav-bar {
+   background: white;
+   display: block;
+   margin: 0;
+   width: 100%;
+   height: 55px;
+   padding: 10px 0 25px 0;
+   10px 0;
+   box-shadow: 0 5px 100px black;
+   position: fixed;
+}
+
+.nav-bar ul {
+   padding: 0;
+}
+
+.nav-bar li {
+    color: black;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(37, 94, 213);
+    border-bottom: 3px solid rgb(37, 94, 213);
+    padding-bottom: 3px;
+}
+
+.currentLink {
+   color: rgb(37, 94, 213) !important;
+   border-bottom: 3px solid rgb(37, 94, 213);
+   padding-bottom: 3px;
+}
+
+
+
+/* SHOWCASE IMAGE AND TEXT*/
+
+#about h2 {
+   font-size: 50px;
+   margin: 15px 0 0 0;
+}
+
+section.image{
+    background: url('../images/car.jpg')
+    repeat fixed 100%;
+    background-size: cover;
+    height: 900px;
+    margin-bottom: 100px;
+}
+
+div.logo{
+   margin: 130px auto 0 auto;
+   padding: 30px 0 10px 0;
+   width: 40%;
+}
+
+div.logo img{
+   opacity: 1.0;
+}
+
+/* TEAM SECTION */
+
+section.description {
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0% 10% 10% 10%;
+}
+
+h2.team{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+section.team {
+    background-color: rgb(37, 94, 213);
+    color: white;
+}
+
+#bio {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 33%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0 50px 0;
+}
+article{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+ul.bio{
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: circle;
+}
+
+
+
+
+section.image2{
+    background: url('../images/car5.jpg')
+    repeat fixed 100%;
+    background-size: cover;
+    height: 700px;
+    margin-bottom: 0px;
+}
+
+/* SPONSOR SECTION */
+
+
+section.sponsor {
+    padding: 0px 10px 10px 10px;
+}
+
+#sponsor {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 33%;
+    margin-top:1px;
+    padding: 0px 0px 50px 0px;
+}
+
+/* CONTACT SECTION */
+
+
+h2.contact{
+    background-color: rgb(37, 94, 213);
+}
+
+#contact {
+    box-sizing: border-box;
+    text-align: center;
+    width: 41%;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: silver;
+}
+
+section.container.contact{
+
+    background-color: rgb(37, 94, 213);
+    padding: 0 0 50px 0;
+}
+
+#inner-contact {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   background-color: rgb(37, 94, 213);
+   margin-bottom: 50px;
+}
+
+ul.contact{
+    list-style: none;
+    font-size: 30px;
+    text-align: left;
+    border-style: double;
+}
+
+form{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px 50px 0px 50px;
+    color: white;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea, input[type=email]{
+    width: 100%; /* Full width */
+    padding: 12px /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 0px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+/* Style the submit button with a specific background color etc */
+button {
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(37, 94, 213);
+  }
+
+  /* When moving the mouse over the submit button, add a darker green color */
+button:hover {
+    background-color: blueviolet;
+  }
+
+  /* Add a background color and some padding around the form */
+  .container {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+/* FOOTER */
+
+footer {
+    background: silver;
+    color:  white;
+    padding: 10px 40px;
+    margin-bottom: 0;
+}
+
+footer {
+    text-align: center;
+}
