@@ -119,7 +119,13 @@ a:hover {
     body{
         overflow-x: hidden;
     }
-    .nav-bar ul{
+
+    img{
+        width: 150%;
+        height: 150%;
+    }
+
+    .nav-links{
         position: absolute;
         right: 0px;
         height: 300%;
@@ -130,9 +136,8 @@ a:hover {
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in;
     }
-    .nav-bar li{
+    .nav-links{
         opacity: 0;
     }
     .burger{
