@@ -96,12 +96,6 @@ a:hover {
     padding-bottom: 3px;
 }
 
-.currentLink {
-   color: rgb(37, 94, 213) !important;
-   border-bottom: 3px solid rgb(37, 94, 213);
-   padding-bottom: 3px;
-}
-
 .burger{
     display: none;
 }
@@ -111,28 +105,6 @@ a:hover {
     height: 3px;
     background-color: black;
     margin: 5px;
-}
-
-/*   MOBILE VERION  */
-
-@media screen and (max-width:1000px)
-{
-    img{
-        width: 150%;
-        height: 150%;
-    }
-
-    #list-of-bios img{
-        width: 50%;
-        height: 50%;
-    }
-
-    #list-of-bios img{
-        width: 50%;
-        height: 50%;
-    }
-
-
 }
 
 .nav-active {
@@ -166,9 +138,25 @@ div.logo img{
    opacity: 1.0;
 }
 
+#socials ul{
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+    padding: 22% 0 0 0;
+    list-style: none;
+    justify-content: center;
+    border-style: dotted;
+}
 
+#socials li{
+    margin: 0 5% 0 5%;
+    border-style: dotted;
+    border-color: white;
+}
 
+#socials img{
 
+}
 
 
 /* TEAM SECTION */
@@ -283,7 +271,7 @@ section.container.sponsor h2 {
 }
 
 #carellos {
-    width: 80%;
+    width: 120%;
     height: 120px;
     margin: 0 0 35px 4%;
     padding: 0;
@@ -299,18 +287,24 @@ section.container.sponsor h2 {
 
 /* CONTACT SECTION */
 
-
-h2.contact{
-    background-color: rgb(37, 94, 213);
-}
+.contact h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    padding: 0;
+    margin: 0;
+ }
 
 #contact {
     box-sizing: border-box;
     text-align: center;
-    width: 80%;
+    width: 60%;
     border-radius: 10px;
-    margin: 10px 50px 20px 50px;
-    background-color: silver;
+    margin: 10px 20px 20px 20px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 1px 1px 25px rgb(50, 50, 50);
 }
 
 section.container.contact{
@@ -386,7 +380,47 @@ footer {
     text-align: center;
 }
 
+footer #socials ul{
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+    padding: 0% 0 0 0;
+    list-style: none;
+    justify-content: center;
+    border-style: dotted;
+}
 
+footer #socials li{
+    margin: 0 5% 0 5%;
+    border-style: dotted;
+    border-color: white;
+}
+
+#socials img{
+
+}
+
+/*  MOBILE VERSION */
+
+@media screen and (max-width:1000px)
+{
+    img{
+        width: 150%;
+        height: 150%;
+    }
+
+    #list-of-bios img{
+        width: 50%;
+        height: 50%;
+    }
+
+    #list-of-bios img{
+        width: 50%;
+        height: 50%;
+    }
+
+
+}
 
 @media screen and (max-width:700px)
 {
