@@ -26,7 +26,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     padding: 0;
-    margin: 0; 
+    margin: 0;
 }
 
 img {
@@ -74,7 +74,6 @@ header {
 .nav-bar ul{
     display: flex;
     justify-content: center;
-
     list-style: none;
 }
 
@@ -116,38 +115,6 @@ a:hover {
 
 /*   MOBILE VERION  */
 
-@media screen and (max-width:700px)
-{
-    body{
-        overflow-x: hidden;
-    }
-
-    img{
-        width: 150%;
-        height: 150%;
-    }
-
-    .nav-links{
-        position: absolute;
-        right: 0px;
-        height: 300%;
-        width: 100%;
-        top: 60%;
-        background: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-        justify-items: end;
-    }
-    .nav-links{
-        opacity: 0;
-    }
-    .burger{
-        display: block;
-    }
-}
-
 @media screen and (max-width:1000px)
 {
     img{
@@ -169,7 +136,8 @@ a:hover {
 }
 
 .nav-active {
-    transform: translateX(0%);
+    transform: translateY(0%);
+    opacity: 1.0;
 }
 
 
@@ -217,12 +185,12 @@ section.team {
     background-color: rgb(37, 94, 213);
     color: white;
     color: white;
-    padding: 80px 7%;
+    padding: 70px 7% 120px 7%;
 }
 
 section.team h2 {
     color: white;
-    margin-bottom: 45px;
+    margin-bottom: 65px;
 }
 
 #list-of-bios {
@@ -231,37 +199,36 @@ section.team h2 {
 }
 
 #bio {
-    width: 37%;
+    background-color: rgb(22, 76, 180);
+    border: 1px solid white;
+    box-shadow: 1px 1px 25px rgb(50, 50, 50);
+    padding: 25px 29px 25px 20px;
+    border-radius: 10px;
+    width: 500px;
     margin: 0 3%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
-/*#bio {
-    display: inline-block;
-    box-sizing: border-box;
-    text-align: center;
-    width: 33%;
-    margin: 0 2%;
+#bio li {
+   margin-top: 5px;
+   font-size: 20px;
+   text-align: left;
+   list-style: circle;
 }
-*/
+
+
 #bio img {
     margin-bottom: 10px;
     border-radius: 15px;
 }
 
-article{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+article {
+    font-size: 30px;
     font-weight: bold;
-}
-
-ul.bio{
-    text-align: left;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    list-style: circle;
 }
 
 
@@ -280,7 +247,7 @@ section.image2{
 
 section.container.sponsor {
     background-color: white;
-    margin: 90px 7% 115px 7%; 
+    margin: 90px 7% 115px 7%;
 }
 
 section.container.sponsor h2 {
@@ -411,4 +378,62 @@ footer {
 
 footer {
     text-align: center;
+}
+
+
+
+@media screen and (max-width:700px)
+{
+    body{
+        overflow-x: visible;
+    }
+
+    img{
+        width: 150%;
+        height: 150%;
+    }
+
+    .nav-bar {
+        height: 20px;
+    }
+
+    .nav-links{
+        position: absolute;
+        margin: 0;
+        padding: 20px 0;
+        right: 0px;
+        width: 100%;
+        top: 62%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-2000%);
+        justify-items: end;
+        opacity: 0;
+    }
+
+    .nav-links li {
+        margin-top: 15px;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    section.description {
+      padding: 0;
+    }
+
+    #list-of-bios {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bio {
+        width: 85%;
+    }
 }
