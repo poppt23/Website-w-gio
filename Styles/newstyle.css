@@ -90,7 +90,7 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover {
+.nav-bar a:hover {
     color: rgb(37, 94, 213);
     border-bottom: 3px solid rgb(37, 94, 213);
     padding-bottom: 3px;
@@ -125,7 +125,7 @@ section.image{
     background: url('../images/kart2grad1.jpg')
     repeat fixed 100%;
     background-size: cover;
-    height: 1050px;
+    height: 800px;
     margin-bottom: 0;
 }
 
@@ -142,21 +142,17 @@ div.logo img{
     display: flex;
     flex-direction: row;
     box-sizing: content-box;
-    padding: 30% 0 0 0;
+    padding: 22% 0 0 0;
     list-style: none;
     justify-content: center;
-    /* border-style: dotted; */
+
 }
 
 #socials li{
-    margin: 0 2%;
-    /* border-style: dotted; */
+    margin: 0 5%;
     border-color: white;
 }
 
-#socials img{
-
-}
 
 
 /* TEAM SECTION */
@@ -258,7 +254,7 @@ section.container.sponsor h2 {
 
 #sponsor {
   width: 37%;
-  margin: 0 3%;
+  margin: 0 8%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -277,11 +273,9 @@ section.container.sponsor h2 {
     padding: 0;
 }
 
-#sabelt {
-    height: 120px;
-    width: 50%;
-    margin: 0 0 35px 0;
-    padding: 0;
+#question
+{
+    margin-top: -10%;
 }
 
 
@@ -334,51 +328,13 @@ ul.contact{
 }
 
 
-form{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0px 50px 0px 50px;
-    padding: 20px;
-    color: white;
-}
-
-/* Style inputs with type="text", select elements and textareas *
-input[type=text], select, textarea, input[type=email]{
-    width: 100%; /* Full width *
-    padding: 12px /* Some padding *
-    border: 1px solid #ccc; /* Gray border *
-    border-radius: 0px; /* Rounded borders *
-    box-sizing: border-box; /* Make sure that padding and width stays in place *
-    margin-top: 6px; /* Add a top margin *
-    margin-bottom: 16px; /* Bottom margin *
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) *
-  }
-
-/* Style the submit button with a specific background color etc *
-button {
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: rgb(37, 94, 213);
-  }
-
-  /* When moving the mouse over the submit button, add a darker green color *
-button:hover {
-    background-color: blueviolet;
-  }
-
-  * Add a background color and some padding around the form *
-  .container {
-    background-color: #f2f2f2;
-  } */
 
 /* FOOTER */
 
 footer {
     background: silver;
     color:  white;
-    padding: 5px 30%;
+    padding:0 100px;
     text-align: center;
 }
 
@@ -392,13 +348,13 @@ footer #socials-list{
     flex-direction: row;
     box-sizing: content-box;
     padding: 0;
-    margin: 0;
+    margin: ;
     list-style: none;
     justify-content: center;
 }
 
 footer #socials-list li{
-    margin: 0 3%;
+    margin: 0 10%;
     border-color: white;
 }
 
