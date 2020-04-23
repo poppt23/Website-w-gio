@@ -108,18 +108,13 @@ a:visited {
 }
 
 .nav-active {
-    transform: translateY(0%);
+    transform: translate(0%);
     opacity: 1.0;
 }
 
 
 
 /* SHOWCASE IMAGE AND TEXT*/
-
-#about h2 {
-   font-size: 50px;
-   text-shadow: 1px 1px 10px rgb(200, 200, 200);
-}
 
 section.image{
     background: url('../images/kart2grad1.jpg')
@@ -157,7 +152,7 @@ div.logo img{
 
 /* TEAM SECTION */
 
-section.description {
+.web-section {
     color: black;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
@@ -246,7 +241,7 @@ section.container.sponsor h2 {
 
 #inner-sponsor {
    display: flex;
-   flex-direction: row;
+=
    justify-content: center;
    background-color: white;
    margin-bottom: 0px;
@@ -368,9 +363,9 @@ footer #socials-list li{
 
 @media screen and (max-width:1000px)
 {
-    img{
-        width: 150%;
-        height: 150%;
+    .logo img{
+        width: 90%;
+        height: 90%;
     }
 
     #list-of-bios img{
@@ -386,15 +381,15 @@ footer #socials-list li{
 
 }
 
-@media screen and (max-width:700px)
+@media screen and (max-width:800px)
 {
     body{
         overflow-x: visible;
     }
 
     img{
-        width: 150%;
-        height: 150%;
+        width: 90%;
+        height: 90%;
     }
 
     .nav-bar {
@@ -402,6 +397,46 @@ footer #socials-list li{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+    }
+
+    #socials {
+        padding: 60% 0%;;
+    }
+
+    .web-section p{
+        font-size: 20px;
+        margin: 10px 30px 0px 30px;
+    }
+
+    #bio{
+        margin: 10% 0 0 0;
+    }
+
+    #inner-sponsor{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #sponsor{
+        justify-content: center;
+        margin: 60px auto 0px auto;
+        width: fit-content;
+
+    }
+
+    #question{
+        height: 30%;
+        width: 30%;
+    }
+
+    #carellos{
+        width: 70%;
+        height: 70%;
+
+    }
+
+    .contact{
+        font-size: 20px;
     }
 
     .nav-links{
