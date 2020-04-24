@@ -107,11 +107,6 @@ a:visited {
     margin: 5px;
 }
 
-.nav-active {
-    transform: translate(0%);
-    opacity: 1.0;
-}
-
 
 
 /* SHOWCASE IMAGE AND TEXT*/
@@ -186,8 +181,8 @@ section.team h2 {
     box-shadow: 1px 1px 10px rgb(70, 70, 70);
     padding: 25px 29px 25px 20px;
     border-radius: 10px;
-    width: 500px;
-    margin: 0 3%;
+    width: 30%;
+    margin: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -197,15 +192,17 @@ section.team h2 {
 
 #bio li {
    margin-top: 5px;
-   font-size: 20px;
+   font-size: 22px;
    text-align: left;
    list-style: circle;
 }
 
 
 #bio img {
-    margin-bottom: 10px;
+    margin: 30px 0;
     border-radius: 15px;
+    width: 170px;
+    height: auto;
 }
 
 article {
@@ -263,9 +260,9 @@ section.container.sponsor h2 {
     padding: 0;
 }
 
-#question
-{
-    margin-top: -10%;
+#question {
+    height: 140px;
+    margin-bottom: 8px;
 }
 
 
@@ -356,25 +353,42 @@ footer #socials-list li{
 
 /*  MOBILE VERSION */
 
-@media screen and (max-width:1000px)
+@media screen and (max-width:1100px)
 {
     .logo img{
         width: 90%;
         height: 90%;
     }
 
-    #list-of-bios img{
-        width: 50%;
-        height: 50%;
+    #list-of-bios {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bio {
+        margin: 40px;
+        width: 70%;
+    }
+
+    #bio article {
+      font-size: 32px;
+    }
+
+    #bio li {
+      font-size: 25px;
     }
 
     #list-of-bios img{
         width: 50%;
-        height: 50%;
+        height: auto;
+        margin: 30px 0;
     }
-
 
 }
+
 
 @media screen and (max-width:800px)
 {
@@ -407,6 +421,14 @@ footer #socials-list li{
         margin: 10% 0 0 0;
     }
 
+    #bio article {
+      font-size: 30px;
+    }
+
+    #bio li {
+      font-size: 22px;
+    }
+
     #inner-sponsor{
         flex-direction: column;
         justify-content: center;
@@ -437,21 +459,26 @@ footer #socials-list li{
     .nav-links{
         position: absolute;
         margin: 0;
-        padding: 20px 0;
+        padding: 0 0 15px 0;
         right: 0px;
         width: 100%;
-        top: 62%;
+        top: 65%;
         background: white;
         display: flex;
         flex-direction: column;
         align-items: center;
         transform: translateY(-2000%);
-        justify-items: end;
+        align-items: center;
         opacity: 0;
     }
 
     .nav-links li {
         margin-top: 15px;
+    }
+
+    .nav-active {
+        transform: translateY(0%);
+        opacity: 1;
     }
 
     .burger{
@@ -473,7 +500,8 @@ footer #socials-list li{
     }
 
     #list-of-bios img{
-        height: 50%px;
+        width: 270px;
+        margin: 20px 0;
     }
 
     #bio {
@@ -495,4 +523,11 @@ footer #socials-list li{
         height: 350px;
         margin-bottom: 0px;
     }
+}
+
+@media screen and (max-width:600px) {
+  #list-of-bios img{
+      width: 200px;
+      margin: 20px 0;
+  }
 }
